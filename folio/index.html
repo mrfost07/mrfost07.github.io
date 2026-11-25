@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,10 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Folio — Desktop widgets for Windows</title>
   <meta name="description" content="Group desktop shortcuts, save widget layouts, and keep weather, music, and tasks on your Windows desktop.">
-  <meta name="theme-color" content="#0b192d">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#080b12">
   <link rel="canonical" href="https://mrfost07.github.io/folio/">
   <link rel="icon" type="image/png" href="./assets/folio.png">
-  <link rel="stylesheet" href="./assets/site.css">
+  <link rel="preload" as="image" href="./assets/demo-poster.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="./assets/site.css?v=dark">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -29,16 +34,16 @@
           <h1 id="hero-title">Your desktop, with room to work.</h1>
           <p>Group files, folders, and apps into widgets. Keep the tools you use every day one glance away.</p>
           <div class="actions">
-            <a class="button ice" href="./download/">Download for Windows</a>
-            <a class="button outline" href="#demo">Watch the demo</a>
+            <a class="button" href="./download/">Download for Windows</a>
+            <a class="button outline" href="#demo">See the demo</a>
           </div>
           <p class="compatibility">Windows 10 and 11 · x64 and ARM64</p>
         </div>
         <figure class="hero-visual capture demo-stage" id="demo">
-          <video controls playsinline preload="none" width="1440" height="810" poster="./assets/demo-poster.jpg" aria-label="Folio desktop demo">
-            <source src="./assets/demo.mp4" type="video/mp4">
-            <a href="./assets/demo.mp4">Open the Folio demo video</a>
+          <video autoplay muted loop playsinline preload="auto" width="960" height="540" poster="./assets/demo-poster.jpg" aria-label="Folio desktop demo">
+            <source media="(prefers-reduced-motion: no-preference)" src="data:video/mp4;base64,{% include_relative _media/demo.mp4.b64 %}" type="video/mp4">
           </video>
+          <img class="demo-still" src="./assets/demo-poster.jpg" width="1440" height="810" alt="Folio widgets and the file search window on the desktop">
           <figcaption class="caption">Folio running on the Windows desktop</figcaption>
         </figure>
       </div>
@@ -77,7 +82,7 @@
       </figure>
     </section>
 
-    <section class="lighter section" aria-labelledby="startup-title">
+    <section class="surface-section section" aria-labelledby="startup-title">
       <div class="wrap detail-row">
         <figure class="capture">
           <img src="./assets/startup-settings.jpg" width="908" height="754" alt="Folio General settings with Launch at startup, Silent startup, and Resource saver controls" loading="lazy">
@@ -96,7 +101,7 @@
         <h2 id="get-folio">Set up your first widget</h2>
         <p>The installer includes the Windows App Runtime for offline installation.</p>
       </div>
-      <a class="button ice" href="./download/">Get Folio</a>
+      <a class="button" href="./download/">Get Folio</a>
     </section>
   </main>
   <footer class="site-footer">
