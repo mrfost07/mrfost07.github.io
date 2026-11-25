@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Folio for Windows</title>
+  <meta name="description" content="Download the Folio desktop organizer for Windows x64 and ARM64 and verify the installer with its SHA-256 checksum.">
+  <meta name="theme-color" content="#0b192d">
+  <link rel="canonical" href="https://mrfost07.github.io/folio/download/">
+  <link rel="icon" type="image/png" href="../assets/folio.png">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="wordmark" href="../"><img src="../assets/folio.png" width="32" height="32" alt="">Folio</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../">Overview</a>
+        <a href="../guide/">Guide</a>
+        <a class="nav-download" href="../download/" aria-current="page">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="narrow">
+      <header class="page-heading">
+        <h1>Download Folio</h1>
+        <p class="lead">For Windows 10 version 2004 or later, and Windows 11. The installer includes the matching Windows App Runtime for offline setup.</p>
+      </header>
+      <!-- Release downloads -->
+      <p class="status">The 1.5.9 installers are being prepared. <a href="https://github.com/mrfost07/Folio/releases">View Folio releases</a></p>
+      <div class="download-panel" aria-label="Installer compatibility">
+        <section aria-labelledby="arch-x64">
+          <h2 id="arch-x64">Windows x64</h2>
+          <p>For most Intel and AMD Windows PCs.</p>
+        </section>
+        <section aria-labelledby="arch-arm64">
+          <h2 id="arch-arm64">Windows ARM64</h2>
+          <p>For Snapdragon and other Windows on ARM PCs.</p>
+        </section>
+      </div>
+      <!-- End release downloads -->
+      <div class="download-notes">
+        <h2>Which installer should I choose?</h2>
+        <p>In Windows, open <span class="path">Settings → System → About</span> and look for <span class="path">System type</span>. Match the processor type to x64 or ARM64.</p>
+        <details>
+          <summary>Verify an installer</summary>
+          <p>Run <code>Get-FileHash .\Folio_Setup_1.5.9_x64.exe -Algorithm SHA256</code> in PowerShell, substituting the downloaded filename if needed. Compare the result with the SHA-256 file for the same installer.</p>
+        </details>
+        <h2>What’s in 1.5.9</h2>
+        <ul>
+          <li>Create shortcut-based widgets from a desktop selection or group items by type.</li>
+          <li>Save widget placements and choose from visual layout templates.</li>
+          <li>Restore widgets at sign-in and check grouped shortcuts in the background.</li>
+          <li>Choose a Weather or Music presentation and collapse widgets to titles.</li>
+        </ul>
+        <p><a href="https://github.com/mrfost07/Folio/blob/main/docs/releases/v1.5.9.md">Read the release notes</a></p>
+        <h2>After installation</h2>
+        <p>Follow the <a href="../guide/">Folio guide</a> to organize your first few icons and configure startup.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>
+        <a class="wordmark" href="../"><img src="../assets/folio.png" width="32" height="32" alt="">Folio</a>
+        <p class="footer-copy">Open-source desktop widgets for Windows.</p>
+      </div>
+      <nav class="footer-links" aria-label="Project links">
+        <a href="https://github.com/mrfost07/Folio">GitHub</a>
+        <a href="https://github.com/mrfost07/Folio/issues">Report an issue</a>
+        <a href="https://github.com/mrfost07/Folio/blob/main/LICENSE">GPL-3.0 license</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
