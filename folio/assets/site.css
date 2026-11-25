@@ -51,12 +51,13 @@ h3 { font-size: 1.23rem; letter-spacing: -.022em; }
 .hero-visual { position: relative; }
 .hero-visual::before { content: ""; pointer-events: none; position: absolute; inset: -12% -18% -8%; background: radial-gradient(ellipse, #1a3e72 0, transparent 70%); opacity: .52; }
 .demo-stage { scroll-margin-top: 1rem; }
-.demo-stage video, .demo-still { display: block; position: relative; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #080c14; border: 1px solid #5e7598; border-radius: .75rem; box-shadow: 0 1.75rem 4rem #0008; }
+.demo-stage picture { display: block; position: relative; }
+.demo-stage img { aspect-ratio: 16 / 9; background: #080c14; }
+.hero-visual picture img { background: #080c14 url("./hero-demo-poster.jpg") center / cover; box-shadow: 0 1.75rem 4rem #0008; }
 .demo-stage .caption { position: relative; }
 .capture { position: relative; margin: 0; }
 .capture img { width: 100%; background: var(--surface); border: 1px solid #5e7598; border-radius: .75rem; }
 .caption { margin-top: .58rem; color: var(--muted); font-size: .875rem; }
-.demo-still { display: none; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.1rem; }
 .button { border: 1px solid transparent; border-radius: .48rem; display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: .6rem 1.1rem; background: var(--accent-fill); color: #fff; text-decoration: none; font-weight: 680; }
 .button:hover { background: #2b5ddb; color: #fff; }
@@ -126,11 +127,6 @@ code { overflow-wrap: anywhere; color: var(--text); }
   .nav { gap: .7rem; font-size: .92rem; }
   .nav a.nav-download { padding: .3rem .45rem; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .demo-stage video { display: none; }
-  .demo-stage .demo-still { display: block; }
-}
-
 @media (forced-colors: active) {
   .button, .nav a.nav-download { border: 1px solid ButtonText; }
 }

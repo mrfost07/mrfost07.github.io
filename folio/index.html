@@ -12,8 +12,8 @@ layout: null
   <meta name="theme-color" content="#080b12">
   <link rel="canonical" href="https://mrfost07.github.io/folio/">
   <link rel="icon" type="image/png" href="./assets/folio.png">
-  <link rel="preload" as="image" href="./assets/demo-poster.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="./assets/site.css?v=dark">
+  <link rel="preload" as="image" href="./assets/hero-demo-poster.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="./assets/site.css?v=demos">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -40,10 +40,11 @@ layout: null
           <p class="compatibility">Windows 10 and 11 · x64 and ARM64</p>
         </div>
         <figure class="hero-visual capture demo-stage" id="demo">
-          <video autoplay muted loop playsinline preload="auto" width="960" height="540" poster="./assets/demo-poster.jpg" aria-label="Folio desktop demo">
-            <source media="(prefers-reduced-motion: no-preference)" src="data:video/mp4;base64,{% include_relative _media/demo.mp4.b64 %}" type="video/mp4">
-          </video>
-          <img class="demo-still" src="./assets/demo-poster.jpg" width="1440" height="810" alt="Folio widgets and the file search window on the desktop">
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-demo-poster.jpg">
+            <source type="image/avif" srcset="data:image/avif;base64,{% include_relative _media/hero-demo.avif.b64 %}">
+            <img src="./assets/hero-demo.gif" width="960" height="540" fetchpriority="high" alt="Folio’s desktop widgets and file search in use">
+          </picture>
           <figcaption class="caption">Folio running on the Windows desktop</figcaption>
         </figure>
       </div>
@@ -81,6 +82,22 @@ layout: null
         <figcaption class="caption">The placement template picker in Folio</figcaption>
       </figure>
     </section>
+
+    <section class="wrap section" id="widget-menus" aria-labelledby="widget-menus-title">
+      <div class="section-heading">
+        <h2 id="widget-menus-title">Make each widget work your way</h2>
+        <p>Open a widget’s three-dot menu to change its style or display mode, lock its size and position, or combine it with another widget.</p>
+      </div>
+      <figure class="capture demo-stage">
+        <picture>
+          <source media="(prefers-reduced-motion: reduce)" srcset="./assets/widget-menus-poster.jpg">
+          <source type="image/avif" srcset="./assets/widget-menus.avif">
+          <img src="./assets/widget-menus.gif" width="960" height="540" loading="lazy" decoding="async" alt="Folio’s Apps widget menu showing style, display mode, and lock options">
+        </picture>
+        <figcaption class="caption">The Apps widget’s menu and submenus</figcaption>
+      </figure>
+    </section>
+
 
     <section class="surface-section section" aria-labelledby="startup-title">
       <div class="wrap detail-row">
