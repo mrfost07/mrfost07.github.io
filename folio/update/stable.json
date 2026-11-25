@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "channel": "stable",
+  "version": "1.5.9",
+  "releaseDate": "2026-11-25",
+  "mandatory": false,
+  "downloadUrl": "https://github.com/mrfost07/Folio/releases/download/v1.5.9/Folio_Setup_1.5.9_x64.exe",
+  "sha256": "A07A7168B3DE86A98C9FAAB342A8BAD6D2D6C41DAF65976A3B912FC4B0AE4692",
+  "size": 34452419,
+  "arm64DownloadUrl": "https://github.com/mrfost07/Folio/releases/download/v1.5.9/Folio_Setup_1.5.9_arm64.exe",
+  "arm64Sha256": "CE080DCBFFA4FC849E262FFB228F2734A78EC4427DC20676742A0A0165F4D89D",
+  "arm64Size": 33811781,
+  "manualDownloadUrl": "https://mrfost07.github.io/folio/download/",
+  "releaseNotesUrl": "https://github.com/mrfost07/Folio/releases/tag/v1.5.9",
+  "summary": {
+    "en-US": "Group desktop shortcuts, save a widget layout, and restore it at sign-in. Includes new Weather and Music presentations."
+  }
+}

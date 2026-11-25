@@ -29,15 +29,23 @@
         <p class="lead">For Windows 10 version 2004 or later, and Windows 11. The installer includes the matching Windows App Runtime for offline setup.</p>
       </header>
       <!-- Release downloads -->
-      <p class="status">The 1.5.9 installers are being prepared. <a href="https://github.com/mrfost07/Folio/releases">View Folio releases</a></p>
-      <div class="download-panel" aria-label="Installer compatibility">
+      <p class="status"><strong>Folio 1.5.9</strong> · November 25, 2026 <a href="https://github.com/mrfost07/Folio/releases/tag/v1.5.9">GitHub release</a></p>
+      <div class="download-panel" aria-label="Folio 1.5.9 installers">
         <section aria-labelledby="arch-x64">
           <h2 id="arch-x64">Windows x64</h2>
-          <p>For most Intel and AMD Windows PCs.</p>
+          <p>For most Intel and AMD Windows PCs. 32.9 MiB.</p>
+          <div class="download-link-row">
+            <a class="button" href="https://github.com/mrfost07/Folio/releases/download/v1.5.9/Folio_Setup_1.5.9_x64.exe">Download x64</a>
+            <a href="https://github.com/mrfost07/Folio/releases/download/v1.5.9/Folio_Setup_1.5.9_x64.exe.sha256" aria-label="SHA-256 checksum for the x64 installer">SHA-256</a>
+          </div>
         </section>
         <section aria-labelledby="arch-arm64">
           <h2 id="arch-arm64">Windows ARM64</h2>
-          <p>For Snapdragon and other Windows on ARM PCs.</p>
+          <p>For Snapdragon and other Windows on ARM PCs. 32.2 MiB.</p>
+          <div class="download-link-row">
+            <a class="button" href="https://github.com/mrfost07/Folio/releases/download/v1.5.9/Folio_Setup_1.5.9_arm64.exe">Download ARM64</a>
+            <a href="https://github.com/mrfost07/Folio/releases/download/v1.5.9/Folio_Setup_1.5.9_arm64.exe.sha256" aria-label="SHA-256 checksum for the ARM64 installer">SHA-256</a>
+          </div>
         </section>
       </div>
       <!-- End release downloads -->
@@ -46,7 +54,7 @@
         <p>In Windows, open <span class="path">Settings → System → About</span> and look for <span class="path">System type</span>. Match the processor type to x64 or ARM64.</p>
         <details>
           <summary>Verify an installer</summary>
-          <p>Run <code>Get-FileHash .\Folio_Setup_1.5.9_x64.exe -Algorithm SHA256</code> in PowerShell, substituting the downloaded filename if needed. Compare the result with the SHA-256 file for the same installer.</p>
+          <p>Run <code>Get-FileHash .\Folio_Setup_1.5.9_x64.exe -Algorithm SHA256</code> in PowerShell, substituting the downloaded filename if needed. This release uses unsigned installers. Compare the result with the SHA-256 file for the same installer.</p>
         </details>
         <h2>What’s in 1.5.9</h2>
         <ul>
@@ -55,7 +63,7 @@
           <li>Restore widgets at sign-in and check grouped shortcuts in the background.</li>
           <li>Choose a Weather or Music presentation and collapse widgets to titles.</li>
         </ul>
-        <p><a href="https://github.com/mrfost07/Folio/blob/main/docs/releases/v1.5.9.md">Read the release notes</a></p>
+        <p><a href="https://github.com/mrfost07/Folio/releases/tag/v1.5.9">Read the release notes</a></p>
         <h2>After installation</h2>
         <p>Follow the <a href="../guide/">Folio guide</a> to organize your first few icons and configure startup.</p>
       </div>
